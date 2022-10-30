@@ -11,6 +11,6 @@ res.sendFile(path.join(__dirname,"/index.html"))
 
 
 
-app.listen(3000,function(){
-  console.log("Port 3000 up and running")
-})
+app.listen(process.env.PORT||3000, function() {
+  console.log("Server is up and running at port 3000.");
+});
